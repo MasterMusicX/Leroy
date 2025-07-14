@@ -1,0 +1,207 @@
+body {
+    min-height: 100vh;
+    font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background image with overlay */
+.municipal-bg {
+    background-image: url('Gobierno.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+    
+
+.login-container {
+    min-height: 100vh;
+    background-color: rgba(0, 0, 0, 0.6); /* bg-black bg-opacity-60 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem; /* p-4 */
+}
+
+/* Login card styling */
+.login-card {
+    background-color: #fff; /* bg-white */
+    border-radius: 1rem; /* rounded-2xl (16px) */
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25); /* shadow-2xl */
+    width: 100%; /* w-full */
+    max-width: 28rem; /* max-w-md (448px) */
+    padding: 2rem; /* p-8 */
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem; /* space-y-7 (28px) */
+    transition: all 0.5s ease; /* transition-all duration-500 */
+    transform: scale(0.95); /* scale-95 */
+    opacity: 0; /* opacity-0 (initial state for animation) */
+}
+
+/* Header section within the card */
+.login-header {
+    text-align: center; /* text-center */
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem; /* space-y-3 (12px) */
+}
+
+/* Logo container */
+.login-logo-container {
+    margin-left: auto; /* mx-auto */
+    margin-right: auto; /* mx-auto */
+    width: 7rem; /* w-28 (112px) */
+    height: 7rem; /* h-28 (112px) */
+    color: #2563EB; /* text-blue-600 */
+}
+
+/* Main title */
+.login-title {
+    font-size: 2.25rem; /* text-4xl (36px) */
+    font-weight: 800; /* font-extrabold */
+    color: #111827; /* text-gray-900 */
+}
+
+/* Subtitle */
+.login-subtitle {
+    color: #374151; /* text-gray-700 */
+    font-size: 1.125rem; /* text-lg (18px) */
+}
+
+/* Form styling */
+.login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem; /* space-y-6 (24px) */
+}
+
+/* Form group (label + input) */
+.form-group {
+    /* This class is primarily for animation, no direct styles here from Tailwind */
+}
+
+/* Label for form inputs */
+.form-label {
+    display: block; /* block */
+    font-size: 0.875rem; /* text-sm (14px) */
+    font-weight: 600; /* font-semibold */
+    color: #374151; /* text-gray-700 */
+    margin-bottom: 0.5rem; /* mb-2 */
+}
+
+/* Input fields */
+.form-input {
+    width: 100%; /* w-full */
+    padding: 0.75rem 1.25rem; /* px-5 py-3 */
+    border: 1px solid #D1D5DB; /* border border-gray-300 */
+    border-radius: 0.75rem; /* rounded-xl (12px) */
+    transition: all 0.3s ease; /* transition-all duration-300 */
+}
+
+/* Placeholder color for inputs */
+.form-input::placeholder {
+    color: #6B7280; /* placeholder-gray-500 */
+}
+
+/* Button group */
+.button-group {
+    display: flex; /* flex */
+    flex-direction: column; /* flex-col */
+    gap: 1rem; /* gap-4 (16px) */
+}
+
+/* Submit button */
+.submit-button {
+    width: 100%; /* w-full */
+    color: #fff; /* text-white */
+    padding: 0.875rem 1.5rem; /* py-3.5 px-6 */
+    border-radius: 0.75rem; /* rounded-xl */
+    font-weight: 700; /* font-bold */
+    font-size: 1.125rem; /* text-lg */
+    cursor: pointer; /* cursor-pointer */
+    display: flex; /* flex */
+    align-items: center; /* items-center */
+    justify-content: center; /* justify-center */
+    transition: all 0.3s ease; /* transition-all duration-300 */
+}
+
+/* Admin link container */
+.admin-link-container {
+    text-align: center; /* text-center */
+    margin-top: 0.5rem; /* mt-2 */
+}
+
+/* Admin link */
+.admin-link {
+    color: #DC2626; /* text-red-600 */
+    font-weight: 600; /* font-semibold */
+    font-size: 1rem; /* text-base (16px) */
+    transition: color 0.2s ease; /* transition-colors duration-200 */
+}
+.admin-link:hover {
+    color: #991B1B; /* hover:text-red-800 */
+}
+
+/* Bottom links section */
+.bottom-links {
+    display: flex; /* flex */
+    flex-direction: column; /* flex-col */
+    gap: 0.75rem; /* space-y-3 (12px) */
+    font-size: 0.875rem; /* text-sm (14px) */
+}
+
+/* Responsive styles for bottom links */
+@media (min-width: 640px) { /* sm: breakpoint */
+    .bottom-links {
+        flex-direction: row; /* sm:flex-row */
+        justify-content: space-between; /* justify-between */
+        gap: 0; /* reset gap for row layout */
+        font-size: 1rem; /* sm:text-base */
+    }
+}
+
+/* Create account link */
+.create-account-link {
+    color: #2563EB; /* text-blue-600 */
+    text-align: center; /* text-center */
+    font-weight: 500; /* font-medium */
+    transition: color 0.2s ease; /* transition-colors duration-200 */
+}
+.create-account-link:hover {
+    color: #1E40AF; /* hover:text-blue-800 */
+}
+@media (min-width: 640px) { /* sm: breakpoint */
+    .create-account-link {
+        text-align: left; /* sm:text-left */
+    }
+}
+
+/* Separator span */
+.separator {
+    display: none; /* hidden */
+    color: #9CA3AF; /* text-gray-400 */
+}
+@media (min-width: 640px) { /* sm: breakpoint */
+    .separator {
+        display: inline; /* sm:inline */
+    }
+}
+
+/* Recover password link */
+.recover-password-link {
+    color: #4B5563; /* text-gray-600 */
+    text-align: center; /* text-center */
+    font-weight: 500; /* font-medium */
+    transition: color 0.2s ease; /* transition-colors duration-200 */
+}
+.recover-password-link:hover {
+    color: #1F2937; /* hover:text-gray-800 */
+}
+@media (min-width: 640px) { /* sm: breakpoint */
+    .recover-password-link {
+        text-align: right; /* sm:text-right */
+    }
+}
+

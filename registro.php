@@ -150,9 +150,9 @@
                             class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all"
                         >
                             <option value="">Seleccione una pregunta</option>
-                            <option value="nombre_mascota">¿Cuál es el nombre de tu primera mascota?</option>
-                            <option value="nombre_padres">¿Cuál es el nombre de tu padre o madre?</option>
-                            <option value="Lugar_nacimiento">¿En donde naciste?</option>
+                            <option value="Artista_Favorito">¿Artista Favorito?</option>
+                            <option value="Genero_Musical">Genero musical Favorito</option>
+                            <option value="Mes_nacimiento">Mes de Nacimiento</option>
                         </select>
                         <input 
                             type="text" 

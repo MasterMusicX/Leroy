@@ -29,7 +29,6 @@ if (!empty($_POST["ingresar"])) {
                 // Verificar la contraseña con hash
                 if (password_verify($contrasenia, $datos->contrasenia)) {
                     // Establecer variables de sesión
-                    $_SESSION["idusuarios"] = $datos->id;
                     $_SESSION["correo"] = $datos->correo;
                     $_SESSION["nombre"] = $datos->nombre;
                    
